@@ -1,91 +1,107 @@
+<div align="center">
+
 # Georgy Pevchikh
 
-### AI-Assisted Product Engineer & Systems Designer
+### AI Product & Automation Engineer · Product Systems Designer
 
-I turn product ideas and AI-generated prototypes into structured, usable applications - from product discovery and interaction design to data models, permissions, implementation, and deployment.
+I turn product ideas and AI-generated prototypes into structured, secure and usable applications — from product discovery and interaction design to data models, permissions, automation, testing and deployment.
 
-My background is in visual design, but my work sits across the whole product system: I define the problem, design the operating model, build the interface and backend foundation, and create a delivery workflow that keeps decisions traceable.
+[![Upwork](https://img.shields.io/badge/Upwork-Profile-14A800?style=for-the-badge&logo=upwork&logoColor=white)](https://www.upwork.com/freelancers/~01c6b4199075060eea)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/georgy-pevchikh-b84967406/)
+[![X](https://img.shields.io/badge/X-@georgypevchikh-111111?style=for-the-badge&logo=x)](https://x.com/georgypevchikh)
 
-[Upwork](https://www.upwork.com/freelancers/~01c6b4199075060eea) · [LinkedIn](https://www.linkedin.com/in/georgy-pevchikh-b84967406/) · [X](https://x.com/georgypevchikh)
+**Product judgment stays human-owned. AI accelerates execution.**
 
-## Selected work
+</div>
 
-### [StuffSycle - university community marketplace](https://github.com/georgypevchikh/stuff-sycle-case-study)
+## What I build
 
-**Shipped and deployed.** A peer-to-peer marketplace designed to reduce waste and make local exchange safer inside a university community.
+My background is in visual design, but my work spans the complete product system. I define the problem, model the workflow, design the interface and data boundary, integrate managed services, and build a delivery process that keeps decisions and implementation traceable.
 
-- Built solo from research and UX architecture through implementation and deployment.
-- React, TypeScript, Vite, React Router, Tailwind CSS, Supabase, and Vercel.
-- Authentication, catalog, search and filters, listings, user profiles, messaging, support, and administration.
-- Developed through a structured workflow using Obsidian, Linear, Figma Make, Cursor, and Claude Code.
+| Product engineering | Backend and automation | Product systems |
+|---|---|---|
+| React, Next.js, TypeScript, React Native, Expo | Supabase, PostgreSQL, Auth, RLS, SQL, APIs, webhooks, n8n | Product discovery, UX architecture, data modeling, roles, permissions, design systems |
 
-[Live product](https://stuff-sycle-web-4.vercel.app/) · [Detailed case study](https://github.com/georgypevchikh/stuff-sycle-case-study)
+## Flagship work
 
-### Multi-tenant restaurant inventory system
+### Restamenu Console — executable multi-tenant proof
 
-**Architecture and backend foundation in active development.** A cross-platform inventory and purchasing workflow for restaurant teams.
+<a href="https://github.com/georgypevchikh/restamenu-console-demo">
+  <img src="https://raw.githubusercontent.com/georgypevchikh/restamenu-console-demo/main/docs/images/requests-dashboard.png" alt="Restamenu purchase-request dashboard" />
+</a>
 
-- Expo, React Native, TypeScript, Expo Router, Supabase, and PostgreSQL.
-- Ten-table relational model with restaurant membership, manager/team roles, purchasing history, and notifications.
-- SQL migrations and database-enforced tenant isolation through Row Level Security.
-- Product architecture and delivery workflow designed around GitHub, Linear, Cursor, and Claude Code.
+A public restaurant operations console built to prove that tenant isolation lives in Postgres rather than in client-side filters.
 
-The source repository is private. A sanitized architecture walkthrough is available on request.
+- **Next.js 16 + React 19 + TypeScript strict** on Vercel.
+- **Supabase Auth + Postgres Row Level Security** across two live restaurant tenants.
+- Manager/team roles with read- and write-side tenant-isolation tests.
+- Urgent request → Postgres trigger → `pg_net` → n8n → Telegram.
+- Webhook secret in Supabase Vault; no privileged database credential in n8n.
+- Typecheck, ESLint, production build and **7/7 integration tests** in GitHub Actions.
 
-### Multi-sided booking marketplace
+[Live demo](https://restamenu-console-demo.vercel.app) · [Technical case study](https://github.com/georgypevchikh/restamenu-console-demo) · [CI](https://github.com/georgypevchikh/restamenu-console-demo/actions)
 
-**Product discovery and launch architecture.** An architecture engagement for a multilingual consumer/provider marketplace.
+### StuffSycle — research-to-shipped marketplace
 
-- Competitor teardown, evidence-based provisional personas, role and permission mapping, and phased MVP definition.
-- Expo mobile, Next.js web/admin, Supabase/Postgres, Vercel, and EAS architecture.
-- API boundaries, data model, RLS strategy, CI/CD, environments, observability, store release, QA, and cost/risk decision gates.
+<a href="https://github.com/georgypevchikh/stuff-sycle-case-study">
+  <img src="https://raw.githubusercontent.com/georgypevchikh/stuff-sycle-case-study/main/assets/screenshots/catalog.jpg" alt="StuffSycle university marketplace catalog" />
+</a>
 
-The client and product are anonymized. The implementation was paused after discovery and architecture, before application development.
+A peer-to-peer marketplace for a university community, built independently from the research question through product strategy, UX/UI, application architecture, backend integration and public deployment.
 
-## What I work across
+- React 18, TypeScript, Vite, React Router and Tailwind CSS.
+- Supabase Auth, PostgreSQL, Storage and Realtime.
+- Catalog, search, filters, listings, profiles, item-linked messaging, support and administration.
+- Structured AI-assisted workflow across Obsidian, Linear, Figma Make, Cursor and Claude Code.
+- **43-page bachelor project** documenting the research, product decisions, architecture and implemented interface.
 
-### Product engineering
+[Live product](https://stuff-sycle-web-4.vercel.app/) · [Product + engineering case study](https://github.com/georgypevchikh/stuff-sycle-case-study) · [Bachelor project](https://github.com/georgypevchikh/stuff-sycle-case-study/blob/main/docs/StuffSycle-bachelor-project.pdf)
 
-React · TypeScript · React Native · Expo · Vite · React Router · Tailwind CSS
+## How I work with AI
 
-### Backend and data
-
-Supabase · PostgreSQL · Auth · Row Level Security · Storage · Realtime · SQL migrations
-
-### Product and systems design
-
-Product discovery · UX architecture · User flows · Data modeling · Role and permission design · Design systems · Release planning
-
-### Delivery system
-
-Claude Code · Cursor · Codex · GitHub · Linear · Obsidian · Figma · Figma Make · Vercel · Expo EAS
-
-## How I use AI tools
-
-AI is an implementation accelerator, not the owner of product judgment.
+AI is an implementation accelerator, not the owner of architecture or product judgment.
 
 ```text
-Research and decisions   -> Obsidian
-Scope and acceptance     -> Linear
-Interface exploration    -> Figma / Figma Make
-Implementation workspace -> Cursor
-Codebase-aware execution -> Claude Code / Codex
-Versioned source         -> GitHub
-Backend and data         -> Supabase / PostgreSQL
-Deployment               -> Vercel / Expo EAS
+Research and decisions   → Obsidian
+Scope and acceptance     → Linear
+Interface exploration    → Figma / Figma Make
+Implementation workspace → Cursor / Codex / Claude Code
+Versioned source         → GitHub
+Backend and data         → Supabase / PostgreSQL
+Automation               → Postgres triggers / n8n / APIs
+Deployment               → Vercel / Expo EAS
 ```
 
-I keep product decisions outside chat, break work into reviewable tasks, inspect generated code, and make architecture and security decisions explicit. The result is faster delivery without making the codebase dependent on one conversation or one AI tool.
+I keep durable decisions outside chat, break work into reviewable outcomes, inspect generated output, and make authorization, secrets and release boundaries explicit.
 
-## Working principles
+## Engineering principles
 
 - Product decisions before framework decisions.
 - Database permissions before client-side assumptions.
 - Migrations and code in version control; runtime secrets outside Git.
-- Explicit separation between implemented, planned, and exploratory work.
-- Lightweight infrastructure first, with clear decision gates for scaling.
+- Implemented, planned and exploratory work are labeled separately.
+- Managed infrastructure first when it reduces surface area without weakening the data model.
 - Every public claim should have an artifact behind it.
+- A green local command is not finished until CI and the deployed result agree.
+
+## All public repositories
+
+This section is generated daily from the GitHub API. New public repositories appear automatically; the workflow commits only when repository metadata changes.
+
+<!-- PUBLIC-REPOS:START -->
+<!-- Generated by scripts/update_public_projects.py. Do not edit this block manually. -->
+| Repository | What it demonstrates | Stack / topics | Links |
+|---|---|---|---|
+| **[restamenu-console-demo](https://github.com/georgypevchikh/restamenu-console-demo)** | Multi-tenant restaurant operations demo — Next.js, Supabase RLS, CI, n8n, and Telegram automation | TypeScript · multi tenant · n8n · nextjs · postgresql | [Repository](https://github.com/georgypevchikh/restamenu-console-demo) · [Live](https://restamenu-console-demo.vercel.app) |
+| **[stuff-sycle-case-study](https://github.com/georgypevchikh/stuff-sycle-case-study)** | Research-to-shipped university marketplace — product, UX, React, Supabase, and AI-assisted delivery case study | ai assisted development · case study · marketplace · product design | [Repository](https://github.com/georgypevchikh/stuff-sycle-case-study) · [Live](https://stuff-sycle-web-4.vercel.app/) |
+<!-- PUBLIC-REPOS:END -->
 
 ## Availability
 
-Open to scoped product builds, AI-generated prototype productionization, React/Supabase work, architecture and codebase audits, and long-term product engineering partnerships.
+Open to scoped product builds, AI-generated prototype productionization, React/Next.js/Supabase work, workflow automation, architecture and codebase audits, and long-term product engineering partnerships.
+
+<div align="center">
+
+[Upwork](https://www.upwork.com/freelancers/~01c6b4199075060eea) · [LinkedIn](https://www.linkedin.com/in/georgy-pevchikh-b84967406/) · [X](https://x.com/georgypevchikh)
+
+</div>
