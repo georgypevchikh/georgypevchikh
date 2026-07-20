@@ -10,8 +10,6 @@ I turn product ideas and AI-generated prototypes into structured, secure and usa
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/georgy-pevchikh-b84967406/)
 [![X](https://img.shields.io/badge/X-@georgypevchikh-111111?style=for-the-badge&logo=x)](https://x.com/georgypevchikh)
 
-**Product judgment stays human-owned. AI accelerates execution.**
-
 </div>
 
 ## What I build
@@ -52,27 +50,9 @@ A peer-to-peer marketplace for a university community, built independently from 
 - React 18, TypeScript, Vite, React Router and Tailwind CSS.
 - Supabase Auth, PostgreSQL, Storage and Realtime.
 - Catalog, search, filters, listings, profiles, item-linked messaging, support and administration.
-- Structured AI-assisted workflow across Obsidian, Linear, Figma Make, Cursor and Claude Code.
 - **43-page bachelor project** documenting the research, product decisions, architecture and implemented interface.
 
 [Live product](https://stuff-sycle-web-4.vercel.app/) · [Product + engineering case study](https://github.com/georgypevchikh/stuff-sycle-case-study) · [Bachelor project](https://github.com/georgypevchikh/stuff-sycle-case-study/blob/main/docs/StuffSycle-bachelor-project.pdf)
-
-## How I work with AI
-
-AI is an implementation accelerator, not the owner of architecture or product judgment.
-
-```text
-Research and decisions   → Obsidian
-Scope and acceptance     → Linear
-Interface exploration    → Figma / Figma Make
-Implementation workspace → Cursor / Codex / Claude Code
-Versioned source         → GitHub
-Backend and data         → Supabase / PostgreSQL
-Automation               → Postgres triggers / n8n / APIs
-Deployment               → Vercel / Expo EAS
-```
-
-I keep durable decisions outside chat, break work into reviewable outcomes, inspect generated output, and make authorization, secrets and release boundaries explicit.
 
 ## Engineering principles
 
