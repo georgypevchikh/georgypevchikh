@@ -73,7 +73,7 @@ This section is generated daily from the GitHub API. New public repositories app
 | Repository | What it demonstrates | Stack / topics | Links |
 |---|---|---|---|
 | **[restamenu-console-demo](https://github.com/georgypevchikh/restamenu-console-demo)** | Multi-tenant restaurant operations demo — Next.js, Supabase RLS, CI, n8n, and Telegram automation | TypeScript · multi tenant · n8n · nextjs · postgresql | [Repository](https://github.com/georgypevchikh/restamenu-console-demo) · [Live](https://restamenu-console-demo.vercel.app) |
-| **[stuff-sycle-case-study](https://github.com/georgypevchikh/stuff-sycle-case-study)** | Research-to-shipped university marketplace — product, UX, React, Supabase, and AI-assisted delivery case study | ai assisted development · case study · marketplace · product design | [Repository](https://github.com/georgypevchikh/stuff-sycle-case-study) · [Live](https://stuff-sycle-web-4.vercel.app/) |
+| **[stuff-sycle-case-study](https://github.com/georgypevchikh/stuff-sycle-case-study)** | Research-to-shipped university marketplace — product strategy, UX/UI, React, Supabase. Shipped and publicly deployed. | case study · marketplace · product design · react | [Repository](https://github.com/georgypevchikh/stuff-sycle-case-study) · [Live](https://stuff-sycle-web-4.vercel.app/) |
 | **[signalwatch](https://github.com/georgypevchikh/signalwatch)** | Automated Hacker News tech-signal monitor: deterministic pre-filter → OpenAI Structured Outputs → Postgres → independent Telegram/Discord delivery via authenticated n8n webhook. Next.js dashboard. | TypeScript · automation · hacker news · n8n · nextjs | [Repository](https://github.com/georgypevchikh/signalwatch) · [Live](https://signalwatch-one.vercel.app) |
 <!-- PUBLIC-REPOS:END -->
 
