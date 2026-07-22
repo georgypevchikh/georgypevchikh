@@ -25,17 +25,17 @@ My background is in visual design, but my work spans the complete product system
 ### Restamenu Console — executable multi-tenant proof
 
 <a href="https://github.com/georgypevchikh/restamenu-console-demo">
-  <img src="https://raw.githubusercontent.com/georgypevchikh/restamenu-console-demo/main/docs/images/requests-dashboard.png" alt="Restamenu purchase-request dashboard" />
+  <img src="https://raw.githubusercontent.com/georgypevchikh/restamenu-console-demo/main/docs/images/proof-purchase-orders.png" alt="Restamenu purchase orders — priced by the tax engine, approved with OTP, synced to Xero" />
 </a>
 
-A public restaurant operations console built to prove that tenant isolation lives in Postgres rather than in client-side filters.
+A public restaurant operations console, extended into a full billing & supplier-sync back office. It proves that tenant isolation lives in Postgres — and that a billing and accounting workflow can be built signed, idempotent and database-enforced end to end.
 
-- **Next.js 16 + React 19 + TypeScript strict** on Vercel.
-- **Supabase Auth + Postgres Row Level Security** across two live restaurant tenants.
-- Manager/team roles with read- and write-side tenant-isolation tests.
-- Urgent request → Postgres trigger → `pg_net` → n8n → Telegram.
-- Webhook secret in Supabase Vault; no privileged database credential in n8n.
-- Typecheck, ESLint, production build and **7/7 integration tests** in GitHub Actions.
+- **Next.js 16 + React 19 + TypeScript strict** on Vercel; **Supabase Auth + Postgres Row-Level Security** across two live tenants, with read- and write-side isolation tests.
+- **Stripe subscription billing** (test mode): signed, idempotent webhooks, an event-ordering guard, and entitlements granted/revoked by a database trigger.
+- **Xero accounting sync** (demo company) over **OAuth 2.0**: encrypted tokens, refresh rotation, and a fenced, idempotent bill push with paginated import.
+- **Versioned tax engine**, **OTP-gated approvals** (Twilio SMS/WhatsApp), **server-side PDF**, and a **transactional outbox** → n8n → Telegram.
+- **Nine Supabase Edge Functions** (Deno), **28 SQL migrations**, and **183 + 26 tests** green in GitHub Actions.
+- Everything financial runs in **sandbox/test** — a deployed demo, not a production billing operator.
 
 [Live demo](https://restamenu-console-demo.vercel.app) · [Technical case study](https://github.com/georgypevchikh/restamenu-console-demo) · [CI](https://github.com/georgypevchikh/restamenu-console-demo/actions)
 
