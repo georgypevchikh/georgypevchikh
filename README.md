@@ -1,67 +1,54 @@
-<div align="center">
-
 # Georgy Pevchikh
 
-### AI Product & Automation Engineer · Product Systems Designer
+Product engineer. I design and build full-stack applications and the backend and automation behind them: data models and permissions, payments, integrations, testing, and deployment. I started in web and product design (Figma, Framer), and the work now is software.
 
-I turn product ideas and AI-generated prototypes into structured, secure and usable applications — from product discovery and interaction design to data models, permissions, automation, testing and deployment.
+[Upwork](https://www.upwork.com/freelancers/~01c6b4199075060eea) · [LinkedIn](https://www.linkedin.com/in/georgy-pevchikh-b84967406/) · [X](https://x.com/georgypevchikh)
 
-[![Upwork](https://img.shields.io/badge/Upwork-Profile-14A800?style=for-the-badge&logo=upwork&logoColor=white)](https://www.upwork.com/freelancers/~01c6b4199075060eea)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/georgy-pevchikh-b84967406/)
-[![X](https://img.shields.io/badge/X-@georgypevchikh-111111?style=for-the-badge&logo=x)](https://x.com/georgypevchikh)
+## Stack
 
-</div>
+- Frontend: React, Next.js, TypeScript, React Native, Expo
+- Backend and data: PostgreSQL, Supabase, row-level security, SQL, schema design, auth
+- Integration and automation: REST APIs, webhooks, OAuth, Stripe, n8n, GitHub Actions
 
-## What I build
+## Selected work
 
-My background is in visual design, but my work spans the complete product system. I define the problem, model the workflow, design the interface and data boundary, integrate managed services, and build a delivery process that keeps decisions and implementation traceable.
+### Restamenu Console
 
-| Product engineering | Backend and automation | Product systems |
-|---|---|---|
-| React, Next.js, TypeScript, React Native, Expo | Supabase, PostgreSQL, Auth, RLS, SQL, APIs, webhooks, n8n | Product discovery, UX architecture, data modeling, roles, permissions, design systems |
-
-## Flagship work
-
-### Restamenu Console — executable multi-tenant proof
+A multi-tenant restaurant operations console with a billing and supplier-sync back office. Tenant isolation is enforced in Postgres with row-level security. Stripe billing runs on signed, idempotent webhooks with an event-ordering guard, and entitlements are granted by a database trigger. Approved purchase orders are priced by a versioned tax engine, gated by a one-time code, and synced to Xero over OAuth. Built on Next.js and Supabase, with nine Edge Functions, 28 migrations, and 183 + 26 tests green in CI. Everything financial runs against sandbox and test environments — a deployed demo, not a production billing operator.
 
 <a href="https://github.com/georgypevchikh/restamenu-console-demo">
-  <img src="https://raw.githubusercontent.com/georgypevchikh/restamenu-console-demo/main/docs/images/proof-purchase-orders.png" alt="Restamenu purchase orders — priced by the tax engine, approved with OTP, synced to Xero" />
+  <img src="https://raw.githubusercontent.com/georgypevchikh/restamenu-console-demo/main/docs/images/proof-purchase-orders.png" alt="Restamenu console — purchase orders priced by the tax engine, approved with a one-time code, synced to Xero" />
 </a>
 
-A public restaurant operations console, extended into a full billing & supplier-sync back office. It proves that tenant isolation lives in Postgres — and that a billing and accounting workflow can be built signed, idempotent and database-enforced end to end.
+[Live demo](https://restamenu-console-demo.vercel.app) · [Case study](https://github.com/georgypevchikh/restamenu-console-demo) · [CI](https://github.com/georgypevchikh/restamenu-console-demo/actions)
 
-- **Next.js 16 + React 19 + TypeScript strict** on Vercel; **Supabase Auth + Postgres Row-Level Security** across two live tenants, with read- and write-side isolation tests.
-- **Stripe subscription billing** (test mode): signed, idempotent webhooks, an event-ordering guard, and entitlements granted/revoked by a database trigger.
-- **Xero accounting sync** (demo company) over **OAuth 2.0**: encrypted tokens, refresh rotation, and a fenced, idempotent bill push with paginated import.
-- **Versioned tax engine**, **OTP-gated approvals** (Twilio SMS/WhatsApp), **server-side PDF**, and a **transactional outbox** → n8n → Telegram.
-- **Nine Supabase Edge Functions** (Deno), **28 SQL migrations**, and **183 + 26 tests** green in GitHub Actions.
-- Everything financial runs in **sandbox/test** — a deployed demo, not a production billing operator.
+### SignalWatch
 
-[Live demo](https://restamenu-console-demo.vercel.app) · [Technical case study](https://github.com/georgypevchikh/restamenu-console-demo) · [CI](https://github.com/georgypevchikh/restamenu-console-demo/actions)
+An autonomous pipeline that watches Hacker News for relevant technical signals and delivers them to Telegram and Discord. A GitHub Actions cron runs it every two hours. A deterministic keyword filter runs before any model call to keep cost bounded; OpenAI classifies what passes against a strict JSON schema; and each result is written to a Postgres log that stays idempotent on (source, id). Delivery to each channel is independent, so one failing never blocks the other. The dashboard is a read-only, server-side Next.js app.
 
-### StuffSycle — research-to-shipped marketplace
+<a href="https://github.com/georgypevchikh/signalwatch">
+  <img src="https://raw.githubusercontent.com/georgypevchikh/signalwatch/main/docs/images/dashboard.png" alt="SignalWatch dashboard — fetched, analyzed and delivered counts, with classified Hacker News items" />
+</a>
+
+[Live dashboard](https://signalwatch-one.vercel.app) · [Case study](https://github.com/georgypevchikh/signalwatch) · [CI](https://github.com/georgypevchikh/signalwatch/actions)
+
+### StuffSycle
+
+A peer-to-peer marketplace for a university community, built solo from the research question through product strategy, UX and UI, architecture, and public deployment. Catalog, search and filters, listings and profiles, item-linked messaging, support, and administration. React with Supabase for auth, Postgres, storage, and realtime. Documented in a 43-page bachelor project.
 
 <a href="https://github.com/georgypevchikh/stuff-sycle-case-study">
   <img src="https://raw.githubusercontent.com/georgypevchikh/stuff-sycle-case-study/main/assets/screenshots/catalog.jpg" alt="StuffSycle university marketplace catalog" />
 </a>
 
-A peer-to-peer marketplace for a university community, built independently from the research question through product strategy, UX/UI, application architecture, backend integration and public deployment.
+[Live product](https://stuff-sycle-web-4.vercel.app/) · [Case study](https://github.com/georgypevchikh/stuff-sycle-case-study) · [Bachelor project](https://github.com/georgypevchikh/stuff-sycle-case-study/blob/main/docs/StuffSycle-bachelor-project.pdf)
 
-- React 18, TypeScript, Vite, React Router and Tailwind CSS.
-- Supabase Auth, PostgreSQL, Storage and Realtime.
-- Catalog, search, filters, listings, profiles, item-linked messaging, support and administration.
-- **43-page bachelor project** documenting the research, product decisions, architecture and implemented interface.
-
-[Live product](https://stuff-sycle-web-4.vercel.app/) · [Product + engineering case study](https://github.com/georgypevchikh/stuff-sycle-case-study) · [Bachelor project](https://github.com/georgypevchikh/stuff-sycle-case-study/blob/main/docs/StuffSycle-bachelor-project.pdf)
-
-## Engineering principles
+## How I work
 
 - Product decisions before framework decisions.
 - Database permissions before client-side assumptions.
 - Migrations and code in version control; runtime secrets outside Git.
-- Implemented, planned and exploratory work are labeled separately.
-- Managed infrastructure first when it reduces surface area without weakening the data model.
-- Every public claim should have an artifact behind it.
+- Implemented, planned, and exploratory work are labeled separately.
+- Every public claim has an artifact behind it.
 - A green local command is not finished until CI and the deployed result agree.
 
 ## All public repositories
@@ -79,10 +66,6 @@ This section is generated daily from the GitHub API. New public repositories app
 
 ## Availability
 
-Open to scoped product builds, AI-generated prototype productionization, React/Next.js/Supabase work, workflow automation, architecture and codebase audits, and long-term product engineering partnerships.
-
-<div align="center">
+Open to product builds, backend and data-model work, React, Next.js and Supabase applications, workflow automation and integrations, and codebase or architecture audits.
 
 [Upwork](https://www.upwork.com/freelancers/~01c6b4199075060eea) · [LinkedIn](https://www.linkedin.com/in/georgy-pevchikh-b84967406/) · [X](https://x.com/georgypevchikh)
-
-</div>
