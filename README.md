@@ -2,7 +2,7 @@
 
 # Georgy Pevchikh
 
-### Product Engineer · Design + Full-Stack
+### Product Engineer | Full-Stack Development · Product Design
 
 I design products and build them into working systems myself — from research and interface to data models, permissions, integrations, tests and deployment. Visual designer by training, full-stack engineer by practice.
 
