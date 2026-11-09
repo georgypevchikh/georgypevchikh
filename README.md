@@ -2,9 +2,9 @@
 
 # Georgy Pevchikh
 
-### AI Product & Automation Engineer · Product Systems Designer
+### Product Engineer · Design + Full-Stack
 
-I turn product ideas and AI-generated prototypes into structured, secure and usable applications — from product discovery and interaction design to data models, permissions, automation, testing and deployment.
+I design products and build them into working systems myself — from research and interface to data models, permissions, integrations, tests and deployment. Visual designer by training, full-stack engineer by practice.
 
 [![Upwork](https://img.shields.io/badge/Upwork-Profile-14A800?style=for-the-badge&logo=upwork&logoColor=white)](https://www.upwork.com/freelancers/~01c6b4199075060eea)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/georgy-pevchikh-b84967406/)
@@ -33,9 +33,10 @@ A public restaurant operations console, extended into a full billing & supplier-
 - **Next.js 16 + React 19 + TypeScript strict** on Vercel; **Supabase Auth + Postgres Row-Level Security** across two live tenants, with read- and write-side isolation tests.
 - **Stripe subscription billing** (test mode): signed, idempotent webhooks, an event-ordering guard, and entitlements granted/revoked by a database trigger.
 - **Xero accounting sync** (demo company) over **OAuth 2.0**: encrypted tokens, refresh rotation, and a fenced, idempotent bill push with paginated import.
-- **Versioned tax engine**, **OTP-gated approvals** (Twilio SMS/WhatsApp), **server-side PDF**, and a **transactional outbox** → n8n → Telegram.
-- **Nine Supabase Edge Functions** (Deno), **28 SQL migrations**, and **183 + 26 tests** green in GitHub Actions.
+- **Versioned tax engine**, **OTP-gated approvals** (Twilio SMS/WhatsApp), **server-side PDF**, and a **transactional outbox** with retry (delivered to Telegram via n8n during the July 2026 runs; the n8n host is currently offline).
+- **Nine Supabase Edge Functions** (Deno), **29 SQL migrations**, and **183 + 26 tests** green in GitHub Actions.
 - Everything financial runs in **sandbox/test** — a deployed demo, not a production billing operator.
+- Product discovery with 3 restaurants in Vilnius; a test build of the private mobile app was piloted by one bar team to count bar stock.
 
 [Live demo](https://restamenu-console-demo.vercel.app) · [Technical case study](https://github.com/georgypevchikh/restamenu-console-demo) · [CI](https://github.com/georgypevchikh/restamenu-console-demo/actions)
 
@@ -48,11 +49,11 @@ A public restaurant operations console, extended into a full billing & supplier-
 A peer-to-peer marketplace for a university community, built independently from the research question through product strategy, UX/UI, application architecture, backend integration and public deployment.
 
 - React 18, TypeScript, Vite, React Router and Tailwind CSS.
-- Supabase Auth, PostgreSQL, Storage and Realtime.
-- Catalog, search, filters, listings, profiles, item-linked messaging, support and administration.
-- **43-page bachelor project** documenting the research, product decisions, architecture and implemented interface.
+- Supabase Auth, PostgreSQL (RLS) and Storage; guests can browse the catalog.
+- Catalog, search, filters, listings, profiles, support and administration; item-linked messaging and reviews prototyped on demo data.
+- **43-page bachelor project**, research with 30+ participants, graded with the highest mark.
 
-[Live product](https://stuff-sycle-web-4.vercel.app/) · [Product + engineering case study](https://github.com/georgypevchikh/stuff-sycle-case-study) · [Bachelor project](https://github.com/georgypevchikh/stuff-sycle-case-study/blob/main/docs/StuffSycle-bachelor-project.pdf)
+[Live product](https://stuff-sycle-web-4.vercel.app/catalog) · [Product + engineering case study](https://github.com/georgypevchikh/stuff-sycle-case-study) · [Bachelor project](https://github.com/georgypevchikh/stuff-sycle-case-study/blob/main/docs/StuffSycle-bachelor-project.pdf)
 
 ## Engineering principles
 
@@ -79,7 +80,7 @@ This section is generated daily from the GitHub API. New public repositories app
 
 ## Availability
 
-Open to scoped product builds, AI-generated prototype productionization, React/Next.js/Supabase work, workflow automation, architecture and codebase audits, and long-term product engineering partnerships.
+Open to full-time product engineering roles in Vilnius or remote (EU), and to scoped product builds, AI-generated prototype productionization, React/Next.js/Supabase work, workflow automation, architecture and codebase audits, and long-term product engineering partnerships.
 
 <div align="center">
 
