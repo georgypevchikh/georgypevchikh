@@ -34,7 +34,7 @@ A public restaurant operations console, extended into a full billing & supplier-
 - **Stripe subscription billing** (test mode): signed, idempotent webhooks, an event-ordering guard, and entitlements granted/revoked by a database trigger.
 - **Xero accounting sync** (demo company) over **OAuth 2.0**: encrypted tokens, refresh rotation, and a fenced, idempotent bill push with paginated import.
 - **Versioned tax engine**, **OTP-gated approvals** (Twilio SMS/WhatsApp), **server-side PDF**, and a **transactional outbox** with retry (delivered to Telegram via n8n during the July 2026 runs; the n8n host is currently offline).
-- **Nine Supabase Edge Functions** (Deno), **29 SQL migrations**, and **183 + 26 tests** green in GitHub Actions.
+- **Nine Supabase Edge Functions** (Deno), **29 SQL migrations**, and **186 + 30 tests** green in GitHub Actions.
 - Everything financial runs in **sandbox/test** — a deployed demo, not a production billing operator.
 - Product discovery with 3 restaurants in Vilnius; a test build of the private mobile app was piloted by one bar team to count bar stock.
 
